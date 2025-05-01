@@ -1,5 +1,5 @@
 step 1 : git clone https://github.com/mitthulal/demo-test.git
-step 2 unzip .env.zip
+step 2 : unzip .env.zip
 step 3 : create database with laravel name and import laravel.sql file and also update client email id's in client table
 step 4 : run composer install command 
 step 5 : npm install --save-dev vite laravel-vite-plugin
