@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 30, 2025 at 08:56 PM
+-- Generation Time: May 01, 2025 at 07:23 AM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -43,8 +43,9 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`id`, `user_id`, `name`, `email`, `phone`, `address`, `created_at`, `updated_at`) VALUES
-(1, 1, 'ajay', 'ajay@gmail.com', '1234567890', 'mannsrowar jaipur', NULL, NULL),
-(2, 1, 'vijay', 'vijay@gmail.com', '0987654321', 'Alankar Mahila B.ed. College Campus Area, Alankar Mahila B.ed. College, Sirsi Rd, Panchyawala, Jaipur, Rajasthan 302034', NULL, NULL);
+(3, 1, 'mitthu', 'mitthu@dreamcast.co', '9269343151', '9, Madhyam Marg, Ward 27, Sector 12, Mansarovar, Jaipur, Rajasthan 302020', NULL, NULL),
+(4, 1, 'mitthu', 'lokeshsaini9269@gmail.com', '9269343151', '9, Madhyam Marg, Ward 27, Sector 12, Mansarovar, Jaipur, Rajasthan 302020', NULL, NULL),
+(5, 1, 'mitthu', 'hr@gmail.com', '9269343151', '9, Madhyam Marg, Ward 27, Sector 12, Mansarovar, Jaipur, Rajasthan 302020', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -84,12 +85,7 @@ CREATE TABLE `invoices` (
 --
 
 INSERT INTO `invoices` (`id`, `client_id`, `invoice_number`, `invoice_date`, `status`, `total`, `created_at`, `updated_at`) VALUES
-(1, 1, '1234s', '2025-05-07', 'paid', 0.00, '2025-04-30 13:06:21', '2025-04-30 14:37:25'),
-(2, 2, '12344', '2025-05-07', 'unpaid', 0.00, '2025-04-30 13:09:41', '2025-04-30 13:09:41'),
-(3, 2, '123445', '2025-05-08', 'unpaid', 0.00, '2025-04-30 13:10:25', '2025-04-30 13:10:25'),
-(4, 1, '123411sss45', '2025-05-07', 'paid', 123.00, '2025-04-30 14:22:42', '2025-04-30 14:39:41'),
-(5, 1, '12341145w', '2025-05-07', 'paid', 123.00, '2025-04-30 14:22:58', '2025-04-30 14:39:34'),
-(7, 1, '1234', '2025-05-08', 'unpaid', 123.00, '2025-04-30 14:43:45', '2025-04-30 14:43:45');
+(8, 3, '112', '2025-05-02', 'paid', 100.00, '2025-05-01 01:04:39', '2025-05-01 01:04:39');
 
 -- --------------------------------------------------------
 
@@ -256,7 +252,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -268,7 +264,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `invoice_items`
